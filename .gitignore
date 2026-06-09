@@ -1,0 +1,105 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.agent/
+.claude/
+memory/
+*.pdf
+*.eps
+*.tex
+*.jpg
+*.mp4
+*.png
+!public/assets/**/*.png
+!public/assets/**/*.webp
+!public/assets/**/*.jpg
+!public/assets/**/*.mp4
+
+# ── DEAD CODE & UNUSED ASSETS (Aethera Theme Cleanup) ──
+
+# Unused Components
+src/components/aethera/Experience.jsx
+src/components/aethera/Ruins3DScene.jsx
+src/components/aethera/VillageHUD.jsx
+src/components/aethera/IntroSequence.jsx
+src/components/aethera/EditorialHero.jsx
+src/components/aethera/NarrativeMessenger.jsx
+src/components/aethera/LumaImage.jsx
+src/components/aethera/FeedbackSection.jsx
+src/components/aethera/ElixirLoader.jsx
+src/components/aethera/ElementalTransition.jsx
+src/components/aethera/BreathingCharacter.jsx
+src/components/aethera/CityModels.jsx
+src/components/aethera/HolographicCard.jsx
+
+# Unused Data & Utils
+src/data/projects.js
+src/data/skills.js
+src/data/timeline.js
+src/utils/AetherAudio.js
+
+# High-Res Frames (Large Files)
+public/assets/hero-frames/frames_2k/
+
+# Unused 3D & UI Assets
+public/assets/heavy_rock_1.png
+public/assets/heavy_rock_2.png
+public/assets/district_archive.png
+public/assets/district_forge.png
+public/assets/district_skyreach.png
+public/assets/district_void.png
+public/assets/full_city.png
+public/assets/ruins_city_base.png
+public/assets/main_hub.png
+public/assets/rock_link.png
+public/assets/ancient-scroll.jpg
+public/assets/bk.png
+public/assets/scroll_transparent.png
+public/assets/stone_texture.png
+public/assets/town_hall_hd.png
+public/assets/town_hall.png
+public/assets/townhall.png
+public/assets/video_hero.mp4
+public/assets/archer_queen.png
+public/assets/barbarian_king.png
+
+# Root Scripts & Temp Files
+fetch_screens.py
+tmp_list_latest.py
+tmp_parse_projects.py
+tmp_screens.py
+portfolio_vision.md
+personal_3d_portfolio_50ideas.md
+portfolio_reuse_ideas.md
+client_automation_sap_50ideas.md
+stitch_screen.html
+UNESCO Virtual Museum of Stolen Cultural Objects - Google Chrome 2026-04-05 20-42-22.mp4
+projects.png
+image.png
+Gemini_Generated_Image_eigbd0eigbd0eigb.png
+
+# Old Public Wallpapers
+public/kali-wallpaper.png
+public/wallpaper.png
+public/hub.png

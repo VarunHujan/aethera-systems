@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Syncopate:wght@400;700&family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* ── Professional Editorial Palette ── */
+  --bg-dark:          #050505;
+  --accent-primary:   #6dddff;
+  --text-main:        #ffffff;
+  --text-dim:         #94a3b8;
+  --glass-border:     rgba(255, 255, 255, 0.08);
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-space: 'Space Grotesk', sans-serif;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  cursor: none !important;
+}
+
+html, body {
+  width: 100%; height: 100%;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+}
+
+#root { width: 100%; height: 100%; }
+
+/* ── Professional UI Utility Classes ── */
+.text-editorial {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+}
+
+.gradient-silver {
+  background: linear-gradient(180deg, #FFFFFF 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-premium {
+  background: linear-gradient(135deg, #6dddff 0%, #47c4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+.btn-professional {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  padding: 0.6rem 1.8rem;
+  background: white;
+  color: black;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-professional:hover {
+  background: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(109, 221, 255, 0.2);
+}
+
+/* ── Custom Scrollbar ─────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-drafting);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blueprint);
+  border-radius: 10px;
+  opacity: 0.2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6dddff;
+}
+
+/* Lenis smoothing helper */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* ── Utils ─────────────────────────────────────────────────── */
+.text-glow {
+  text-shadow: 0 0 10px rgba(109, 221, 255, 0.5);
+}
+
+.border-glow {
+  box-shadow: 0 0 20px rgba(109, 221, 255, 0.15);
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
